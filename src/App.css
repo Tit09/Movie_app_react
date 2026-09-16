@@ -1,0 +1,155 @@
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.app-header p {
+  color: #9aa5b1;
+  margin: 0;
+}
+
+/* Formulaire d'ajout */
+.add-movie-form {
+  background: #1a1d27;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-movie-form h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+}
+
+.add-movie-form input,
+.add-movie-form textarea {
+  background: #0f1117;
+  border: 1px solid #2b2f3a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #f4f6f8;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.add-movie-form input:focus,
+.add-movie-form textarea:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.add-movie-form button {
+  align-self: flex-start;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-movie-form button:hover {
+  background-color: #b80710;
+}
+
+/* Filtre */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  background: #1a1d27;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+}
+
+.filter-bar input[type='text'] {
+  flex: 1;
+  min-width: 200px;
+  background: #0f1117;
+  border: 1px solid #2b2f3a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #f4f6f8;
+}
+
+.note-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #9aa5b1;
+}
+
+/* Liste et cartes de films */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 18px;
+}
+
+.empty-message {
+  color: #9aa5b1;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.movie-card {
+  background: #1a1d27;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+}
+
+.movie-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 12px 14px;
+}
+
+.movie-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+
+.movie-description {
+  color: #9aa5b1;
+  font-size: 0.82rem;
+  margin: 0 0 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.movie-note {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f5c518;
+}
